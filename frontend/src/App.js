@@ -3,6 +3,7 @@ import { Route, Link, Switch } from "react-router-dom";
 import AllMovies from "./components/AllMovies";
 import MovieDetails from "./components/MovieDetails";
 import Home from "./components/Home";
+import NewMovie from "./components/NewMovie";
 import axios from "axios";
 
 function App() {
@@ -20,6 +21,11 @@ function App() {
           exact
           path="/movies/:id"
           render={(props) => <MovieDetails {...props} />}
+        />
+        <Route
+          exact
+          path="/movies/create"
+          render={(props) => <NewMovie {...props} />}
         />
       </Switch>
     </div>
