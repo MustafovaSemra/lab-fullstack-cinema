@@ -16,7 +16,7 @@ function MovieDetails(props) {
     <>
       {movie && (
         <div>
-          <button onClick={() => props.history.push("/movies")}></button>
+          <button onClick={() => props.history.push("/movies")}>Go Back</button>
           <div>
             <img src={movie.image} />
           </div>
